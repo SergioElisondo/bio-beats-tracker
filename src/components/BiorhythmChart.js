@@ -1,6 +1,8 @@
 import {CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, XAxis} from "recharts"
 import {calculateBiorhythmSeries} from "../lib/biorhythms"
 
+import './BiorhythmChart.css'
+
 // const data = [
 //   {date: '2022-10-01', physical: 1.0, emotional: -0.5, intellectual: -1.0},
 //   {date: '2022-10-02', physical: -1.0, emotional: 1.5, intellectual: 0.0},
@@ -18,7 +20,7 @@ function BiorhythmChart({birthDate, targetDate}) {
           <ReferenceLine x={series[15].date} />
           <Line dataKey="physical" stroke="#F14668" dot={false} type="natural" />
           <Line dataKey="emotional" stroke="rgb(207, 162, 48)" dot={false} type="natural" />
-          <Line dataKey="intellectual" stroke="rgb(28, 164, 228)" dot={false} type="natural" />
+          <Line dataKey="intellectual" stroke="rgb(22 187 167)" dot={false} type="natural" />
         </LineChart>
       </ResponsiveContainer>
     </div>

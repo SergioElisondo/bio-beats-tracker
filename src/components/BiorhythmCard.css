@@ -1,14 +1,21 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .biorhythm-physical {
   color: #F14668;
   text-shadow: .8px .8px .8px black ;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .biorhythm-emotional {
   color: rgb(207, 162, 48);
   text-shadow: .8px .8px .8px black ;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .biorhythm-intellectual {
-  color: rgb(28, 164, 228);
+  color: rgb(22 187 167);
   text-shadow: 1px 1px 1px black ;
+  font-family: 'Montserrat', sans-serif;
 }
