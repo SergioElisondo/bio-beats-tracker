@@ -16,9 +16,9 @@ function BiorhythmChart({birthDate, targetDate}) {
           <CartesianGrid vertical={false} strokeDasharray="2 4" />
           <XAxis dataKey="date" ticks={[series[3].date, series[15].date, series[27].date]} />
           <ReferenceLine x={series[15].date} />
-          <Line dataKey="physical" stroke="green" dot={false} type="natural" />
-          <Line dataKey="emotional" stroke="red" dot={false} type="natural" />
-          <Line dataKey="intellectual" stroke="blue" dot={false} type="natural" />
+          <Line dataKey="physical" stroke="#F14668" dot={false} type="natural" />
+          <Line dataKey="emotional" stroke="rgb(207, 162, 48)" dot={false} type="natural" />
+          <Line dataKey="intellectual" stroke="rgb(28, 164, 228)" dot={false} type="natural" />
         </LineChart>
       </ResponsiveContainer>
     </div>

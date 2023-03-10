@@ -1,11 +1,14 @@
 .biorhythm-physical {
-  color: green;
+  color: #F14668;
+  text-shadow: .8px .8px .8px black ;
 }
 
 .biorhythm-emotional {
-  color: red;
+  color: rgb(207, 162, 48);
+  text-shadow: .8px .8px .8px black ;
 }
 
 .biorhythm-intellectual {
-  color: blue;
+  color: rgb(28, 164, 228);
+  text-shadow: 1px 1px 1px black ;
 }
