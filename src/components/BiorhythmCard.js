@@ -8,7 +8,7 @@ import './BiorhythmCard.css'
 
 function formatDate(isoString) {
   const day = dayjs(isoString)
-  return day.format('D MMMM YYYY')
+  return day.format('D MMMM YYYY').toLocaleUpperCase()
 }
 
 function BiorhythmCard({birthDate, targetDate}) {
@@ -22,9 +22,9 @@ function BiorhythmCard({birthDate, targetDate}) {
       </IonCardHeader>
       <IonCardContent>
         <BiorhythmChart birthDate={birthDate} targetDate={targetDate} />
-        <p className="biorhythm-physical">Physical: {bioRhythms.physical.toFixed(4)}</p>
-        <p className="biorhythm-emotional">Emotional: {bioRhythms.emotional.toFixed(4)}</p>
-        <p className="biorhythm-intellectual">Intellectual: {bioRhythms.intellectual.toFixed(4)}</p>
+        <p className="biorhythm-physical">PHYSICAL: {bioRhythms.physical.toFixed(4)}</p>
+        <p className="biorhythm-emotional">EMOTIONAL: {bioRhythms.emotional.toFixed(4)}</p>
+        <p className="biorhythm-intellectual">INTELLECTUAL: {bioRhythms.intellectual.toFixed(4)}</p>
       </IonCardContent>
     </IonCard>
   )
