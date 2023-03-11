@@ -1,12 +1,12 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.biorhythms.biorhythmsapp',
-  appName: 'biorhythmsapp',
+  appId: 'io.biobeatstracker.biobeatstracker',
+  appName: 'biobeatstracker',
   webDir: 'build',
   bundledWebRuntime: false,
   server: {
-    url: 'https://biorhythms.io/',
+    url: 'https://biobeatstracker.io/',
     cleartext: true,
   }
 };
