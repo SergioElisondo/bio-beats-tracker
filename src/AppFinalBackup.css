@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ion-content {
+  --background: linear-gradient(to right, #602061, #9049c3);
+}
+
+ion-toolbar.toolbar-gradient {
+  --background: linear-gradient(to right, #a45ce8, #4b0082);
+} */
+
+
+/* ion-content {
+  --background: linear-gradient(to right, #7c4d7c, #382845);
+} */
+
+/* ion-content {
+  --background: linear-gradient(to right, #7c7c7c, #0f0b12);
+} */
+
+/* ion-content {
+  --background: linear-gradient(90deg, rgba(15,11,18,1) 1%, #3e3e3e 50%, rgba(15,11,18,1) 99%);
+} */
+
+/* ion-content {
+  --background: linear-gradient(0deg, rgba(15,11,18,1) 20%, rgba(71,71,71,1) 60%);
+} */
+
+ion-content {
+  --background: rgb(39 39 39);
+}
+
+/* ion-toolbar.toolbar-gradient {
+  --background: linear-gradient(to right, #F14668, #5c1625);
+} */
+
+/* ion-toolbar.toolbar-gradient {
+  --background: linear-gradient(to right, rgb(28, 164, 228), rgb(11, 53, 72));
+} */
+
+ion-toolbar.toolbar-gradient {
+  --background: rgb(22 187 167);
+}
+
+ion-item {
+  --background: transparent;
+}
+
+ion-card-title {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+}
+
+#root>ion-app>ion-content>ion-list>ion-item:nth-child(1)>ion-input>input {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root>ion-app>ion-content>ion-list>ion-item:nth-child(2)>ion-input>input {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root>ion-app>ion-content>ion-list>ion-item:nth-child(3)>ion-input>input {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ion-icon[name="calendar"] {
+  --color: white;
+} */
+
+/* The MM/DD/YYYY calendar but can't change font size */
+.date-picker-icon {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  color: white;
+  text-transform: uppercase;
+}
+
+.ion-title-shadow {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+/* .ion-input-shadow {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+} */
+
+.ion-item-clear {
+  background: transparent;
+  border-radius: 4px;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* titles next to calendar picker */
+.birth-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.target-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+ion-list.ios.list-ios {
+  background: var(--ion-item-background, var(--ion-background-color, rgba(255, 255, 255, 0)));
+  font-family: 'Montserrat', sans-serif;
+}
+
+ion-list.md.list-md {
+  background: var(--ion-item-background, var(--ion-background-color, rgba(255, 255, 255, 0)));
+  font-family: 'Montserrat', sans-serif;
+}
+
+ion-list {
+  background: var(--ion-item-background, var(--ion-background-color, rgba(255, 255, 255, 0)));
+  font-family: 'Montserrat', sans-serif;
+}
+
+ion-card-header.ion-inherit-color {
+  background: rgba(0, 0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ion-card-content.ios.card-content {
+  background: rgba(0, 0, 0, 0);
+}
+
+ion-card-content.md.card-content {
+  background: rgba(0, 0, 0, 0);
+} */
+
+ion-card-content.card-content {
+  background: rgba(0, 0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+ion-card.ion-text-center {
+  background: rgba(255, 255, 255, 0.074);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Name of month and day under chart */
+#root>ion-app>ion-content>ion-card>ion-card-content>div>div>div>svg>g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis>g>g:nth-child(1)>text>tspan,
+#root>ion-app>ion-content>ion-card>ion-card-content>div>div>div>svg>g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis>g>g:nth-child(2)>text>tspan,
+#root>ion-app>ion-content>ion-card>ion-card-content>div>div>div>svg>g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis>g>g:nth-child(3)>text>tspan {
+  fill: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+
+.dropdown-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%; /* or any height you want */
+  color: aliceblue;
+}
+
+/* Paragraphs underneath buttons */
+.bio-rhythm-content {
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* .dropdown-menu {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+/* .dropdown-menu.show {
+  opacity: 1;
+} */
+
+/* .dropdown-menu.hide {
+  display: none;
+} */
+
+/* Button styes */
+
+.button {
+  --background: rgb(22 187 167);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  /* width: 310px */
+}
+
+.info-button {
+  margin-top: 20px;
+}
+
+.button-style {
+  border-radius: 4px;
+  font-size: 13px;
+  --transition: .3s;
+  text-shadow: 2px 2px 4px #000000;
+  width: 95%;
+  height: 50px;
+}
+
+.button-style:active {
+  --background: rgb(207, 162, 48);
+}
+
+.button-style:hover {
+  --background: rgb(207, 162, 48);
+}
+
+
+span.button-inner {
+  text-shadow: 1px 1px 2px black;
+}
+
+button>span.button-inner {
+  text-shadow: 1px 1px 2px black;
+}
+
+
+button-inner {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-shadow: 1px 1px 2px black;
+}
+
+ion-card.ion-text-center {
+  background: rgb(24, 24, 24);
+}
+
+
+/* Smooth drop down */
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s ease-out;
+}
+
+.dropdown-menu.show {
+  max-height: 2000px;
+  transition: max-height 1s ease-in;
+}
+
+/* Last container */
+
+/* .last-container {
+  margin-bottom: 100px;
+} */
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.copyright-content {
+  font-size: 12px;
+  color: aliceblue;
+}
