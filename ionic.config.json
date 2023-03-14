@@ -1,0 +1,7 @@
+{
+  "name": "biobeatstracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

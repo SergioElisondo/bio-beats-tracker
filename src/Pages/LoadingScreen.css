@@ -87,12 +87,6 @@ ion-card-title {
   text-transform: uppercase;
 }
 
-.ion-title-shadow {
-  color: aliceblue;
-  text-shadow: 1px 1px 2px black;
-  text-align: center;
-}
-
 /* .ion-input-shadow {
   color: aliceblue;
   text-shadow: 2px 2px 2px black;
@@ -274,9 +268,94 @@ ion-card.ion-text-center {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  width: 100%;
 }
 
 .copyright-content {
   font-size: 12px;
   color: aliceblue;
+}
+
+
+/* Page fade in  */
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Page fade Out */
+.fade-container {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-container.fade-out {
+  opacity: 0;
+}
+
+/* Copyright title */
+.ion-title-shadow-loading {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  margin-top: 150px;
+}
+
+
+/* anime girl headphones */
+.anime-girl-headphones-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-top: 150px;
+}
+
+@media (min-width: 600px) {
+  .main-copyright-container-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .copyright-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      width: 100%;
+  }
+  .anime-girl-headphones-image {
+  height: 200px;
+  margin-right: 10px;
+  margin-top: 150px;
+  display: block;
+  width: 100%;
+}
+.ion-title-shadow-loading {
+  width: 100%;
+  margin-top: 20px;
+}
 }

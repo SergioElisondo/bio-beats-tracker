@@ -28,7 +28,7 @@ function Home() {
   }
 
   return (
-    <IonPage className="background-image">
+    <IonPage className="background-image fade-in-main">
       <IonHeader>
         <IonToolbar className="toolbar-gradient">
           <IonTitle className='ion-title-shadow'>BIO BEATS TRACKER</IonTitle>

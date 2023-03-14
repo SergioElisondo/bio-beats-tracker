@@ -280,3 +280,33 @@ ion-card.ion-text-center {
   font-size: 12px;
   color: aliceblue;
 }
+
+
+/* Fade in for main app */
+.fade-in-main {
+  opacity: 0;
+  -webkit-animation: fadeInMain ease-in 1;
+          animation: fadeInMain ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fadeInMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
