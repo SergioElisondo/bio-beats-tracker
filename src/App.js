@@ -1,7 +1,8 @@
 import {IonApp} from '@ionic/react';
 import React from 'react';
 
-import {BrowserRouter, Route} from 'react-router-dom';
+import {IonReactRouter} from '@ionic/react-router';
+import {Route} from 'react-router-dom'; // removed BrowserRouter
 
 import Home from './Pages/Home'
 import LoadingScreen from './Pages/LoadingScreen'
@@ -12,14 +13,17 @@ function App() {
 
   return (
     <IonApp>
-      <BrowserRouter>
+      <IonReactRouter>
+        {/* <IonRouterOutlet> this is for smooth transitions is not fading to white on mobile */}
         <Route exact path="/">
           <LoadingScreen />
         </Route>
         <Route exact path="/Home">
           <Home />
         </Route>
-      </BrowserRouter>
+        {/* <Redirect exact path="/" to="/LoadingScreen" /> */}
+        {/* </IonRouterOutlet> */}
+      </IonReactRouter>
     </IonApp>
   );
 }

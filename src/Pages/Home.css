@@ -316,3 +316,12 @@ ion-card.ion-text-center {
     opacity: 1;
   }
 }
+
+@media (min-width: 700px){
+  .background-image {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 40%;
+  }
+}

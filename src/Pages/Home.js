@@ -1,8 +1,10 @@
-import {IonPage, IonContent, IonHeader, IonInput, IonLabel, IonTitle, IonToolbar, IonItem, IonList, IonButton, IonImg} from '@ionic/react';
-import {useState} from 'react';
+import {IonPage, IonContent, IonHeader, IonInput, IonLabel, IonTitle, IonToolbar, IonItem, IonList, IonButton, IonImg, IonRouterLink} from '@ionic/react';
+import {useState} from 'react'; // removed useEffect
 
 import BiorhythmCard from '../components/BiorhythmCard';
 import {useStoredState} from '../lib/hooks';
+
+// import {useLocation, useHistory} from 'react-router-dom';
 
 import anime_girl from './anime_softinary_full.png'
 
@@ -13,6 +15,23 @@ function getToday() {
 }
 
 function Home() {
+  // const location = useLocation();
+  // const history = useHistory();
+
+  // useEffect(() => {
+  //   if (location.pathname === '/Home') {
+  //     history.push('/Home');
+  //   }
+  // }, [location, history]);
+
+  // useEffect(() => {
+  //   if (performance.navigation.type === 1) {
+  //     // this is a page refresh, redirect to /Home
+  //     history.push('/Home');
+  //   }
+  // }, [history]);
+
+
   const [birthDate, setBirthDate] = useStoredState('birthDate'); // empty string means no date was selected yet
   const [targetDate, setTargetDate] = useState(getToday); // empty string means no value was passed in yet
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // index of the currently open dropdown, null means no dropdown is open
@@ -37,7 +56,7 @@ function Home() {
           <IonTitle className='ion-title-shadow'>BIO BEATS TRACKER</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
+      <IonContent className="ion-padding main-app-size">
         <IonList>
           <IonItem className='ion-item-clear'>
             <IonLabel position='fixed'>
@@ -61,8 +80,8 @@ function Home() {
             <div className={`dropdown-menu ${ openDropdownIndex === index ? 'show' : '' }`}>
               <p className='bio-rhythm-content'>
                 {content === 'How to use?' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
-                  1. Click on the white calendar in the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
-                  2. Click the white calendar for "TARGET DATE" and enter the date for which you want to calculate your biorhythms<br /><br />
+                  1. Click on the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
+                  2. Click on the "TARGET DATE" field and enter the date for which you want to calculate your biorhythms<br /><br />
                   3. Your physical, emotional, and intellectual biorhythm cycles will be represented in the graph<br /><br />
                   4. Look at the horizontal axis of the chart to find the date range displayed<br /><br />
                   5. Identify the physical, emotional, and intellectual cycles by looking at the color-coded lines on the chart<br /><br />
@@ -113,15 +132,15 @@ function Home() {
           </div>
         ))}
         <div className='copyright-container'>
-          <IonImg
+          <IonRouterLink href="https://softinary.com/"><IonImg
             className='anime-girl-headphones-home'
             src={anime_girl}
             alt="Anime Girl Head with Softinary Logo"
             onError={(e) => {console.error("Error loading image", e);}}
-          />
+          /></IonRouterLink>
         </div>
         <div className='copyright-container-home'>
-          <p className='copyright-content'>DESIGN BY SOFTINARY © 2023</p>
+          <p className='copyright-content'>DESIGN BY <IonRouterLink href="https://softinary.com/">SOFTINARY</IonRouterLink> © 2023</p>
         </div>
       </IonContent>
     </IonPage>

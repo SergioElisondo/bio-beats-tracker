@@ -1,5 +1,6 @@
 import {IonPage, IonContent, IonTitle, IonImg} from '@ionic/react';
 import {useEffect, useState} from 'react';
+import {useHistory} from 'react-router-dom'; // import useHistory
 
 import './LoadingScreen.css';
 
@@ -7,6 +8,8 @@ import anime_girl from './anime_softinary_full.png'
 
 function LoadingScreen() {
   const [fade, setFade] = useState(false);
+
+  const history = useHistory(); // initialize history
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -18,10 +21,10 @@ function LoadingScreen() {
     setTimeout(() => {
       setFade(true);
       setTimeout(() => {
-        window.location.href = './Home';
+        history.push('/Home'); // use history.push instead of window.location.href
       }, 1000); // wait for the fade-out to complete before redirecting
     }, 2700);
-  }, []);
+  }, [history]);
 
   return (
     <div className={`fade-container${ fade ? ' fade-out' : '' }`}>
