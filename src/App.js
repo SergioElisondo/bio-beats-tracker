@@ -1,7 +1,7 @@
 import {IonApp} from '@ionic/react';
 import React from 'react';
 
-import {BrowserRouter, Redirect, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import Home from './Pages/Home'
 import LoadingScreen from './Pages/LoadingScreen'

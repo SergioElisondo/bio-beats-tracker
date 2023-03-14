@@ -1,8 +1,10 @@
-import {IonPage, IonContent, IonHeader, IonInput, IonLabel, IonTitle, IonToolbar, IonItem, IonList, IonButton} from '@ionic/react';
+import {IonPage, IonContent, IonHeader, IonInput, IonLabel, IonTitle, IonToolbar, IonItem, IonList, IonButton, IonImg} from '@ionic/react';
 import {useState} from 'react';
 
 import BiorhythmCard from '../components/BiorhythmCard';
 import {useStoredState} from '../lib/hooks';
+
+import anime_girl from './anime_softinary_full.png'
 
 import './Home.css';
 
@@ -15,6 +17,7 @@ function Home() {
   const [targetDate, setTargetDate] = useState(getToday); // empty string means no value was passed in yet
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // index of the currently open dropdown, null means no dropdown is open
   const dropdownContents = [
+    'How to use?',
     'What is Bio Beat Tracker?',
     'Biorhythm Theory',
     'Physical Cycle',
@@ -57,6 +60,16 @@ function Home() {
             </IonButton>
             <div className={`dropdown-menu ${ openDropdownIndex === index ? 'show' : '' }`}>
               <p className='bio-rhythm-content'>
+                {content === 'How to use?' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
+                  1. Select the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
+                  2. Choose the "TARGET DATE" field and enter the date for which you want to calculate your biorhythms<br /><br />
+                  3. Your physical, emotional, and intellectual biorhythm cycles will be represented in the graph<br /><br />
+                  4. Look at the horizontal axis of the chart to find the date range displayed<br /><br />
+                  5. Identify the physical, emotional, and intellectual cycles by looking at the color-coded lines on the chart<br /><br />
+                  6. Note the highs and lows of each cycle by finding the peaks and valleys of each line on the chart - each cycle will show your current state, whether you are in a positive or negative range<br /><br />
+                  7. Use this information to plan activities or make decisions based on which cycles are in their high or low phases<br /><br />
+                  To read more about biorhythm theory, tap on the "What is Bio Beat Tracker?" or "Biorhythm Theory" buttons. Here you can find detailed information on each cycle and how they relate to your overall well-being.
+                </>)}
                 {content === 'What is Bio Beat Tracker?' && (<>Bio Beats Tracker is an app that uses the biorhythm theory to help users understand their physical, emotional, and intellectual cycles. The biorhythm theory suggests that these cycles have periods that can be calculated based on a person's birthdate. Overall, Bio Beats Tracker is a helpful tool for anyone interested in improving their overall well-being by understanding and working with their natural biorhythms.</>)}
                 {content === 'Biorhythm Theory' && (<>Biorhythms theory suggests that our physical, emotional, and intellectual states follow rhythmic patterns over time, with each cycle having its own duration and starting point.By plotting these cycles on a graph and comparing them to their respective zero points, it's believed that we can gain insight into our current state and potential future trends.
                   <br /><br />
@@ -100,6 +113,14 @@ function Home() {
           </div>
         ))}
         <div className='copyright-container'>
+          <IonImg
+            className='anime-girl-headphones-home'
+            src={anime_girl}
+            alt="Anime Girl Head with Softinary Logo"
+            onError={(e) => {console.error("Error loading image", e);}}
+          />
+        </div>
+        <div className='copyright-container-home'>
           <p className='copyright-content'>DESIGN BY SOFTINARY © 2023</p>
         </div>
       </IonContent>

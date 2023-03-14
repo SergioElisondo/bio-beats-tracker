@@ -284,8 +284,8 @@ ion-card.ion-text-center {
           animation: fadeIn ease-in 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -316,13 +316,6 @@ ion-card.ion-text-center {
   opacity: 0;
 }
 
-/* Copyright title */
-.ion-title-shadow-loading {
-  color: aliceblue;
-  text-shadow: 1px 1px 2px black;
-  text-align: center;
-  margin-top: 150px;
-}
 
 
 /* anime girl headphones */
@@ -330,6 +323,14 @@ ion-card.ion-text-center {
   width: 200px;
   height: 200px;
   margin-right: 10px;
+  margin-top: 150px;
+}
+
+/* Copyright title */
+.ion-title-shadow-loading {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
   margin-top: 150px;
 }
 
@@ -341,21 +342,22 @@ ion-card.ion-text-center {
     width: 100%;
   }
   .copyright-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 100px;
-      width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
   }
   .anime-girl-headphones-image {
-  height: 200px;
-  margin-right: 10px;
-  margin-top: 150px;
-  display: block;
-  width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    display: block;
+    width: 100%;
+  }
+  .ion-title-shadow-loading {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
-.ion-title-shadow-loading {
-  width: 100%;
-  margin-top: 20px;
-}
-}
+
+

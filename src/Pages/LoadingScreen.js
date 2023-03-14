@@ -3,11 +3,10 @@ import {useEffect, useState} from 'react';
 
 import './LoadingScreen.css';
 
-import anime_girl from './anime_softinary.png'
+import anime_girl from './anime_softinary_full.png'
 
 function LoadingScreen() {
   const [fade, setFade] = useState(false);
-
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -21,7 +20,7 @@ function LoadingScreen() {
       setTimeout(() => {
         window.location.href = './Home';
       }, 1000); // wait for the fade-out to complete before redirecting
-    }, 4000);
+    }, 2700);
   }, []);
 
   return (
