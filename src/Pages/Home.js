@@ -61,8 +61,8 @@ function Home() {
             <div className={`dropdown-menu ${ openDropdownIndex === index ? 'show' : '' }`}>
               <p className='bio-rhythm-content'>
                 {content === 'How to use?' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
-                  1. Select the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
-                  2. Choose the "TARGET DATE" field and enter the date for which you want to calculate your biorhythms<br /><br />
+                  1. Click on the white calendar in the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
+                  2. Click the white calendar for "TARGET DATE" and enter the date for which you want to calculate your biorhythms<br /><br />
                   3. Your physical, emotional, and intellectual biorhythm cycles will be represented in the graph<br /><br />
                   4. Look at the horizontal axis of the chart to find the date range displayed<br /><br />
                   5. Identify the physical, emotional, and intellectual cycles by looking at the color-coded lines on the chart<br /><br />
