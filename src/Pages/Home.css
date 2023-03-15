@@ -48,6 +48,19 @@ ion-toolbar.toolbar-gradient {
 
 ion-item {
   --background: transparent;
+  --border-bottom: 1px solid aliceblue;
+}
+
+/* bottom border line on months */
+#root > ion-app > div > ion-content > ion-list > ion-item:nth-child(1) {
+  border-bottom: 1px solid aliceblue;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#root > ion-app > div > ion-content > ion-list > ion-item:nth-child(2) {
+  border-bottom: 1px solid aliceblue;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 ion-card-title {
@@ -166,6 +179,9 @@ ion-card.ion-text-center {
   text-transform: uppercase;
 }
 
+/* .item-label .item-label-fixed {
+  border-bottom: 1px solid aliceblue;
+} */
 
 .dropdown-container {
   display: grid;
@@ -316,6 +332,20 @@ ion-card.ion-text-center {
     opacity: 1;
   }
 }
+
+/* .item-native {
+    padding-left: unset;
+    padding-right: unset;
+    -webkit-padding-start: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+            padding-inline-start: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+    -webkit-padding-end: var(--padding-end);
+            padding-inline-end: var(--padding-end);
+    border-bottom: 1px solid aliceblue;
+}
+
+:host(.item-interactive) {
+  border-bottom: 1px solid aliceblue;
+} */
 
 @media (min-width: 700px){
   .background-image {

@@ -36,8 +36,8 @@ function Home() {
   const [targetDate, setTargetDate] = useState(getToday); // empty string means no value was passed in yet
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // index of the currently open dropdown, null means no dropdown is open
   const dropdownContents = [
-    'How to Use',
     'What is Bio Beat Tracker?',
+    'How to Use',
     'Biorhythm Theory',
     'Physical Cycle',
     'Emotional Cycle',
@@ -79,6 +79,7 @@ function Home() {
             </IonButton>
             <div className={`dropdown-menu ${ openDropdownIndex === index ? 'show' : '' }`}>
               <p className='bio-rhythm-content'>
+                {content === 'What is Bio Beat Tracker?' && (<>Bio Beats Tracker is an app that uses the biorhythm theory to help users understand their physical, emotional, and intellectual cycles. The biorhythm theory suggests that these cycles have periods that can be calculated based on a person's birthdate. Overall, Bio Beats Tracker is a helpful tool for anyone interested in improving their overall well-being by understanding and working with their natural biorhythms.</>)}
                 {content === 'How to Use' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
                   1. Click on the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
                   2. Click on the "TARGET DATE" field and enter the date for which you want to calculate your biorhythms<br /><br />
@@ -89,7 +90,6 @@ function Home() {
                   7. Use this information to plan activities or make decisions based on which cycles are in their high or low phases<br /><br />
                   To read more about biorhythm theory, tap on the "What is Bio Beat Tracker?" or "Biorhythm Theory" buttons. Here you can find detailed information on each cycle and how they relate to your overall well-being.
                 </>)}
-                {content === 'What is Bio Beat Tracker?' && (<>Bio Beats Tracker is an app that uses the biorhythm theory to help users understand their physical, emotional, and intellectual cycles. The biorhythm theory suggests that these cycles have periods that can be calculated based on a person's birthdate. Overall, Bio Beats Tracker is a helpful tool for anyone interested in improving their overall well-being by understanding and working with their natural biorhythms.</>)}
                 {content === 'Biorhythm Theory' && (<>Biorhythms theory suggests that our physical, emotional, and intellectual states follow rhythmic patterns over time, with each cycle having its own duration and starting point.By plotting these cycles on a graph and comparing them to their respective zero points, it's believed that we can gain insight into our current state and potential future trends.
                   <br /><br />
                   The physical cycle is typically the shortest cycle and has a period of approximately 23 days. It is thought to influence a person's strength, coordination, and overall physical well-being. The emotional cycle is typically longer, with a period of around 28 days. This cycle is thought to influence a person's emotional state, including their moods and emotional stability. Finally, the intellectual cycle is the longest cycle, with a period of around 33 days. This cycle is thought to influence a person's cognitive abilities, including their memory, concentration, and problem-solving skills.
