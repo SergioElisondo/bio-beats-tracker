@@ -36,7 +36,7 @@ function Home() {
   const [targetDate, setTargetDate] = useState(getToday); // empty string means no value was passed in yet
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // index of the currently open dropdown, null means no dropdown is open
   const dropdownContents = [
-    'How to use?',
+    'How to Use',
     'What is Bio Beat Tracker?',
     'Biorhythm Theory',
     'Physical Cycle',
@@ -79,7 +79,7 @@ function Home() {
             </IonButton>
             <div className={`dropdown-menu ${ openDropdownIndex === index ? 'show' : '' }`}>
               <p className='bio-rhythm-content'>
-                {content === 'How to use?' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
+                {content === 'How to Use' && (<>The Bio Beats Tracker app is designed to help you understand your physical, emotional, and intellectual cycles utilizing the biorhythms theory. Here's a short guide on how to use the app and where to find your results:<br /><br />
                   1. Click on the "BIRTH DATE" field and enter your birth date by using the date picker tool<br /><br />
                   2. Click on the "TARGET DATE" field and enter the date for which you want to calculate your biorhythms<br /><br />
                   3. Your physical, emotional, and intellectual biorhythm cycles will be represented in the graph<br /><br />
