@@ -140,7 +140,7 @@ function Home() {
           /></IonRouterLink>
         </div>
         <div className='copyright-container-home'>
-          <p className='copyright-content'>DESIGN BY <IonRouterLink href="https://softinary.com/">SOFTINARY</IonRouterLink> © 2023</p>
+          <p className='copyright-content'>DESIGN BY <IonRouterLink href="https://softinary.com/">SOFTINARY</IonRouterLink> © 2024</p>
         </div>
       </IonContent>
     </IonPage>
